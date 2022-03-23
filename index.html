@@ -3,16 +3,25 @@
     <head>
         <title>Magic8Ball</title>
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <script src="main.js"></script>
     </head>
 <body>
-    <p class="indicator">Question:</p>
-    <script src="main.js"></script>
+
+    <div class="container">
+        <img src="images/magic8ball.gif">   
+        <p class="intro">Hello, welcome to our Magic 8 Ball page.</p>
+            <span>Ask a question.</span> 
+        
+
     <div id="buttonholder">
-    <input id="QUESTION" type="text">
-    <button id="fortunebutton" type="button" onClick="yourQuestion()", >Type a Yes or No question</button>
-    <p id="magic8ballquestion">Your question is: </p>
-    <p id="magic8ballanswer">and the answer is: </p>
+        <input id="QUESTION" type="text" placeholder="Type a Yes or No question">
+        <button id="fortunebutton" type="button" onclick="yourQuestion()" >Submit</button>
+    
+        <p id="magic8ballquestion"></p>
+        <p id="magic8ballanswer"></p>
+        <button id="reset" onclick="resetQuestion()">Go back</button>
     </div>
+</div>
 </div>
 </body>
 </html>

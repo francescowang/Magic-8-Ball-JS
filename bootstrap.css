@@ -1,8 +1,20 @@
 body {
     background-color: #6679e4;
     font-size: 56px;
-    background-image: url("images/magic8ball.png");
+    /* background-image: url("images/magic8ball.gif"); */
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+}
+.container {
+  text-align: center;
+}
+button {
+  color: green
+}
+
+#magic8ballanswer {
+  background-color: white;
+  
+
 }
