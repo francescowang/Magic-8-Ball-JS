@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Magic8Ball</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    </head>
-<body>
-    <p class="indicator">Question:</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="data/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
     <script src="main.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="hero">
+            <h1 class="intro">Hello,<br > Welcome to our Magic 8 Ball page</h1>
+            <img src="images/magic8ball.gif" class="eightball">
+            <h2>Ask a question</h2>
+        </div>
+
     <div id="buttonholder">
-    <input id="QUESTION" type="text">
-    <button id="fortunebutton" type="button" onClick="yourQuestion()", >Type a Yes or No question</button>
-    <p id="magic8ballquestion">Your question is: </p>
-    <p id="magic8ballanswer">and the answer is: </p>
+        <input id="QUESTION" type="text" placeholder="Type a Yes or No question">
+        <button id="fortunebutton" type="button" onclick="yourQuestion()">Submit</button>
     </div>
-</div>
+<!-- on the click of the submit button
+- apply class of "show" to div. nw
+-->
+    <div id="answer">
+        <p id="magic8ballquestion"></p>
+        <p id="magic8ballanswer"></p>
+    </div>
+    <div class='resetting'>
+        <button id="reset" onclick="resetQuestion()">Ask another question</button>
+    </div>
+</main>
+    
 </body>
 </html>

@@ -1,0 +1,84 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(166, 166, 166);
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin Sketch', cursive;
+ }
+ 
+ .container {
+  width:65%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(166, 166, 166);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.eightball {
+  width: 50%;
+
+} 
+.hide {display: none;}  
+.show{display: inline;}
+.intro {
+  padding: 22px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+ }
+
+ .container > div:nth-child(3) {
+  background: blueviolet;
+  /*! width: 100%; */margin: 20px 0;
+  padding: 20px;
+ }
+ #QUESTION {
+  width: 87%;
+  height: 25px;
+  padding: 6px;
+  border-radius: 4px;
+  /*! outline: none; */border: none;
+  font-family: 'Cabin Sketch', cursive;
+ }
+ #buttonholder {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+ }
+ 
+ 
+ .resetting {
+  width: 45%;
+  /* align-content: center; */
+  display: flex;
+  justify-content: center;
+ }
+ #answer {
+  width: 45%;
+  text-align: center;
+  background-color: gray;
+  margin: 20px 0px;
+ }
+ 
+
+ #reset {
+  width: 50%;
+  /*! margin: 0 auto; */padding: 6px 17px;
+ font-family: 'Cabin Sketch', cursive;
+ }
+ #fortunebutton {
+  padding: 0px 12px;
+  /*! border: none; *//*! width: 20%; */
+ font-family: 'Cabin Sketch', cursive;
+ }
