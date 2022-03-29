@@ -1,20 +1,79 @@
 body {
-    background-color: #6679e4;
-    font-size: 56px;
-    /* background-image: url("images/magic8ball.gif"); */
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ .container {
+  width:65%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
-.container {
+
+.hero {
   text-align: center;
-}
-button {
-  color: green
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.eightball {
+  width: 50%;
 
-#magic8ballanswer {
-  background-color: white;
-  
+} 
+.hide {display: none;}  
+.show{display: inline;}
+.intro {
+  padding: 22px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+ }
 
-}
+ .container > div:nth-child(3) {
+  background: blueviolet;
+  /*! width: 100%; */margin: 20px 0;
+  padding: 20px;
+ }
+ #QUESTION {
+  width: 87%;
+  height: 25px;
+  padding: 6px;
+  border-radius: 4px;
+  /*! outline: none; */border: none;
+ }
+ #buttonholder {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+ }
+ 
+ 
+ .resetting {
+  width: 45%;
+  /* align-content: center; */
+  display: flex;
+  justify-content: center;
+ }
+ #answer {
+  width: 45%;
+  text-align: center;
+  background-color: gray;
+  margin: 20px 0px;
+ }
+ 
+
+ #reset {
+  width: 50%;
+  /*! margin: 0 auto; */padding: 6px 17px;
+ }
+ #fortunebutton {
+  padding: 0px 12px;
+  /*! border: none; *//*! width: 20%; */
+ }
