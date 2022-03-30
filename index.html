@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </head>
 
 <body>
@@ -22,14 +22,14 @@
 
     <div id="buttonholder">
         <input id="question" type="text" placeholder="Type a Yes or No question">
-        <button id="fortunebutton" type="button" onclick="yourQuestion()">Submit</button>
+        <button id="fortunebutton" type="button">Submit</button>
     </div>
 
     <div id="answer" class="hide">
         <p id="magic8ballanswer"></p>
     </div>
      <div class='reset-container'>
-        <button id="resetbutton" class="hide" onclick="resetQuestion()">Ask another question</button>
+        <button id="resetbutton" class="hide">Ask another question</button>
     </div> 
 </main> 
 </body>
