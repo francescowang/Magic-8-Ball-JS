@@ -7,6 +7,7 @@ export const answers = [
     "Don’t count on it.",
     "It is certain.", 
     "It is decidedly so.",
+    "Keep on dreaming.",
     "Most likely.", 
     "My reply is no.", 
     "My sources say no.",
@@ -18,5 +19,5 @@ export const answers = [
     "Without a doubt.",
     "Yes.",
     "Yes – definitely.",
-     "You may rely on it."
- ];
+    "You may rely on it."
+];
