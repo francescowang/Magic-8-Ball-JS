@@ -1,35 +1,47 @@
 body {
   height: 100%;
   margin: 0;
-  background-color: rgb(166, 166, 166);
+  background-color: rgb(179, 179, 179);
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cabin Sketch', cursive;
  }
  
+ /*containers*/
+
  .container {
   width:65%;
   height: 100vh;
   margin: 0 auto;
-  background-color: rgb(166, 166, 166);
+  background-color: rgb(179, 179, 179);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
-.hero {
+.intro-container {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
  }
+
+ .reset-container {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+ }
+
+/*images*/
+
 .eightball {
   width: 50%;
 
 } 
-.hide {display: none;}  
-.show{display: inline;}
+
+/* other sections*/
+
 .intro {
   padding: 22px;
   font-size: 40px;
@@ -37,17 +49,12 @@ body {
   line-height: 1.2;
  }
 
- .container > div:nth-child(3) {
-  background: blueviolet;
-  /*! width: 100%; */margin: 20px 0;
-  padding: 20px;
- }
- #QUESTION {
+ #question {
   width: 87%;
   height: 25px;
   padding: 6px;
   border-radius: 4px;
-  /*! outline: none; */border: none;
+  border: none;
   font-family: 'Cabin Sketch', cursive;
  }
  #buttonholder {
@@ -57,28 +64,34 @@ body {
   gap: 20px;
  }
  
- 
- .resetting {
-  width: 45%;
-  /* align-content: center; */
-  display: flex;
-  justify-content: center;
- }
  #answer {
   width: 45%;
   text-align: center;
-  background-color: gray;
-  margin: 20px 0px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  margin: 40px 0px;
+  padding: 20px;
  }
  
 
- #reset {
+/*buttons*/
+
+ #resetbutton {
   width: 50%;
-  /*! margin: 0 auto; */padding: 6px 17px;
- font-family: 'Cabin Sketch', cursive;
+  padding: 6px 17px;
+  border-radius: 4px;
+  font-family: 'Cabin Sketch', cursive;
  }
  #fortunebutton {
   padding: 0px 12px;
-  /*! border: none; *//*! width: 20%; */
- font-family: 'Cabin Sketch', cursive;
+  border-radius: 4px;
+  font-family: 'Cabin Sketch', cursive;
  }
+
+/* hide and show the answer and the reset button*/
+
+ .hide {
+  display: none;
+}  
