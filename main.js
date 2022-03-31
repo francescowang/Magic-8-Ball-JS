@@ -2,6 +2,7 @@ import {answers} from "./modules/answers.js"
 
 let submitButton = document.querySelector("#fortunebutton");
 let resetTheQuestion = document.querySelector("#resetbutton");
+let question = document.querySelector("#question");
 
 function yourQuestion() {
     let result = answers[Math.floor(Math.random() * answers.length)];
@@ -16,13 +17,26 @@ function yourQuestion() {
     setTimeout(function() {
         document.getElementById('resetbutton').style.display = "inline";
         }, 2000);
-       
+   
 };
 
 function resetQuestion(){
     window.location.reload();
 };
 
+function EnableDisable() {
+    //Reference the Button.
+
+    //Verify the TextBox value.
+    if (question.value.trim() != "") {
+        //Enable the TextBox when TextBox has value.
+        submitButton.disabled = false;
+    } else {
+        //Disable the TextBox when TextBox is empty.
+        submitButton.disabled = true;
+    }
+};
 
 submitButton.addEventListener('click', yourQuestion);
 resetTheQuestion.addEventListener('click', resetQuestion);
+question.addEventListener('keyup', EnableDisable);
