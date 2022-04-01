@@ -14,7 +14,7 @@ Hi reader, team 10 created the classic Magic 8 Ball game by applying DevOps prin
 - Reset button to ask another question
 - Simplistic code modularity 
 
-### Tech Stack and Tools
+### Tech Stack and Tools:
 - JavaScript ES6
 - CSS 3 - Flexbox
 - HTML 5
