@@ -22,7 +22,7 @@ function yourQuestion() {
         document.getElementById("fortunebutton").disabled = true;
         document.getElementById("question").disabled = true;
         }, 2500);
-   
+
 };
 
 // To reset after showing answer
